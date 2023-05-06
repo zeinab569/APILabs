@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
+            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+    </script>
+    <script>
+        $(function () {
+            $.ajax({
+                url: "http://localhost:8088/api/course",
+                method: "Get",
+                success: function (data) {
+                    
+                    alert(JSON.stringify(data))
+                },
+                error: function () {
+                    alert("error")
+                }
+
+            })
+
+            //$("button").click(function () {
+            //    $.post("http://localhost:8088/api/course",
+            //        {
+            //            id:1300,
+            //            cr_name: "MySql",
+            //            cr_duration: 55,
+            //            topicName: "DB",
+            //            topicid: 2
+            //        },
+            //     function (data, status) {
+            //            alert("Data: " + data + "\nStatus: " + status);
+            //        });
+            //});
+
+
+            $("button").click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8088/api/course",
+                    data: {
+                        id: 1300,
+                        cr_name: "MySql",
+                        cr_duration: 55,
+                        topicName: "DB",
+                        topicid: 2
+                    },
+                    success: alert("Added "),
+                });
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <button>Add Course</button>
+ 
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "4E+/BY4gTMuEufp5R0wIv7Y4EvVSIvMBZCQJNTcasFg=",
+  "Source": "webappApi2",
+  "BasePath": "_content/webappApi2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "webappApi2\\wwwroot",
+      "Source": "webappApi2",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\repos\\ApiLabs\\webappApi2\\webappApi2\\wwwroot\\",
+      "BasePath": "_content/webappApi2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\lenovo\\source\\repos\\ApiLabs\\webappApi2\\webappApi2\\wwwroot\\Home.html",
+      "SourceId": "webappApi2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\source\\repos\\ApiLabs\\webappApi2\\webappApi2\\wwwroot\\",
+      "BasePath": "_content/webappApi2",
+      "RelativePath": "Home.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Home.html"
+    }
+  ]
+}
